@@ -10,7 +10,7 @@ describe('classNames', () => {
     expect(classNames('someClass', {}, ['class1', 'class2'])).toBe(expected);
   });
 
-  test('with modal with one param', () => {
+  test('with mods param', () => {
     const expected = 'someClass class1 class2 hover';
     expect(classNames('someClass', { hover: true, scroll: false }, ['class1', 'class2'])).toBe(expected);
   });

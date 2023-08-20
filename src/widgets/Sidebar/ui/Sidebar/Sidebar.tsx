@@ -12,7 +12,7 @@ interface Props {
 
 export const Sidebar: FC<Props> = (props) => {
   const { className } = props;
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   const [collapsed, setCollapsed] = useState(false);
   const onToggle = () => {
     setCollapsed((prev) => !prev);
