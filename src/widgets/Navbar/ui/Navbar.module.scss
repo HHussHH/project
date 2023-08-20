@@ -1,4 +1,4 @@
-.Navbar{
+.Navbar {
   width: 100%;
   height: var(--navbar-h);
   background: var(--inverted-bg-color);
@@ -7,13 +7,12 @@
   padding: 20px;
 }
 
-.Links{
+.Links {
   display: flex;
-  gap:15px;
+  gap: 15px;
   margin-left: auto;
 }
 
-.Link{
-  color:var(--inverted-secondary-color)
-
+.Link {
+  color: var(--inverted-secondary-color);
 }
