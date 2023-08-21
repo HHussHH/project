@@ -7,13 +7,14 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "*":["./src/*"]
+      "*": [
+        "./src/*"
+      ]
     },
     "allowJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
-
   },
   "ts-node": {
     "compilerOptions": {
