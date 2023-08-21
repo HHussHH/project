@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import React from 'react';
 
 function MainPage() {
   const { t } = useTranslation('MainPage');
@@ -8,4 +9,5 @@ function MainPage() {
       </div>
   );
 }
+
 export default MainPage;
