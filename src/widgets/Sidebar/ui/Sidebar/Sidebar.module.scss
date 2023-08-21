@@ -1,5 +1,5 @@
 .Sidebar {
-  height: calc(100vh - var(--navbar-h));
+  height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
   background: var(--inverted-bg-color);
   position: relative;
@@ -16,7 +16,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
+
+
