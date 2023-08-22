@@ -19,6 +19,13 @@ const preview: Preview = {
     StyleDecorator,
     ThemeDecorator(Theme.LIGHT),
     (story) => <BrowserRouter>{story()}</BrowserRouter>,
+    // (story) => (
+    //     <Suspense fallback="">
+    //         <I18nextProvider i18n={i18n}>
+    //             {story()}
+    //         </I18nextProvider>
+    //     </Suspense>
+    // ),
   ],
 };
 

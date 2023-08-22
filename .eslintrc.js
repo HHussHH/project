@@ -37,6 +37,9 @@ module.exports = {
       ignoreAttribute: ['data-testid', 'to'],
     }],
   },
+  globals: {
+    __IS_DEV__: true,
+  },
   overrides: [{
     files: ['**/src/**/*.test.{ts,tsx}'],
     rules: {
