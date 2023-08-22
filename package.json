@@ -12,9 +12,9 @@
     "lint:style": "npx stylelint \"**/*.scss\" --fix",
     "lint:style:fix": "npx stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
-    "test:ui": "npx loki test",
+    "test:ui": "npx loki test --chromeRetries 3",
     "test:ui:ok": "npx loki approve",
-    "test:ui:ci": "concurrently -s first -k  \"npm run test:ui\" ",
+    "test:ui:ci": " concurrently \"npm run sb\" \"npm run test:ui\"",
     "sb": "storybook dev -p 6006 -c ./config/storybook",
     "sb:build": "storybook build -c ./config/storybook"
   },
