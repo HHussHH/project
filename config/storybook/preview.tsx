@@ -1,8 +1,8 @@
 import type { Preview } from '@storybook/react';
-import { Theme } from 'app/providers/ThemeProvider';
 import { BrowserRouter } from 'react-router-dom';
-import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { StyleDecorator } from '../../src/shared/config/storybook/StyleDecorator/StyleDecorator';
+import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
+import { StyleDecorator } from 'shared/config/storybook/StyleDecorator/StyleDecorator';
+import { Theme } from 'app/providers/ThemeProvider';
 
 const preview: Preview = {
   parameters: {
@@ -17,15 +17,8 @@ const preview: Preview = {
 
   decorators: [
     StyleDecorator,
-    ThemeDecorator(Theme.LIGHT),
+    ThemeDecorator(Theme.DARK),
     (story) => <BrowserRouter>{story()}</BrowserRouter>,
-    // (story) => (
-    //     <Suspense fallback="">
-    //         <I18nextProvider i18n={i18n}>
-    //             {story()}
-    //         </I18nextProvider>
-    //     </Suspense>
-    // ),
   ],
 };
 

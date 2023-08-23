@@ -4,15 +4,7 @@
   background: var(--inverted-bg-color);
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   padding: 20px;
 }
 
-.Links {
-  display: flex;
-  gap: 15px;
-  margin-left: auto;
-}
-
-.Link {
-  color: var(--inverted-primary-color);
-}

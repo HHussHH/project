@@ -25,6 +25,12 @@ export const CLEAR: Story = {
     theme: ButtonTheme.CLEAR,
   },
 };
+export const CLEAR_INVERTED: Story = {
+  args: {
+    children: 'CLEAR',
+    theme: ButtonTheme.CLEAR_INVERTED,
+  },
+};
 export const CLEAR_DARK: Story = {
   decorators: [
     ThemeDecorator(Theme.DARK),
